@@ -1,0 +1,30 @@
+@using System.Web.Http
+@using System.Web.Http.Description
+@using System.Collections.ObjectModel
+@using Coldbaked.HelpPages.Models
+@using Coldbaked.HelpPages
+@model ILookup<string, ApiDescription>
+
+@{
+    ViewBag.Title = "API Help Page";
+}
+<header>
+    <h1>API Help Page</h1>
+</header>
+<div id="body">
+    <section class="featured">
+        <div class="hero-unit">
+            <h2>API Help</h2>
+            <p>
+                The API allows for data to be retreived by authorised companies by using web service calls.
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        @foreach (var group in Model)
+        {
+            @Html.DisplayFor(m => group, "ApiGroup")
+        }
+    </section>
+</div>
+

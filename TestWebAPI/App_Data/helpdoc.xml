@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestWebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:TestWebAPI.Controllers.ValuesController.Get">
+            <summary>
+            Get some value
+            <br />
+            Show the results
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestWebAPI.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>     
+        </member>
+    </members>
+</doc>
